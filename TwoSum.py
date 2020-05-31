@@ -9,7 +9,6 @@ class TwoSum:
             #don't bother looking at anymore, just move to the next.
             if nums[i] > target:
                 continue
-            print(i)
             for j in range(i+1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return [nums[i], nums[j]]
@@ -19,8 +18,15 @@ class TwoSum:
 
 
 
-x = TwoSum()
-ans = x.FindIndeces([1,2,3, 7], 5)
+procesor = TwoSum()
+x = 0
+nums = []
+while int(x) > -1:
+    x = input('Enter a number to add to the list: ')
+    nums.append(int(x))
+
+target = int(input('Enter the target: '))
+ans = procesor.FindIndeces(nums, target)
 
 print(f'number 1: {ans[0]} number 2: {ans[1]}')
 
