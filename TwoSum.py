@@ -1,6 +1,4 @@
-class TwoSum:
-    
-    
+class TwoSumWorker:
     #take in an array of numbers and a target value. Looks through the array
     #and finds the indeces of the two numbers that sum to target value.
     def FindIndeces(self, nums, target):
@@ -18,16 +16,5 @@ class TwoSum:
 
 
 
-procesor = TwoSum()
-x = 0
-nums = []
-while int(x) > -1:
-    x = input('Enter a number to add to the list: ')
-    nums.append(int(x))
-
-target = int(input('Enter the target: '))
-ans = procesor.FindIndeces(nums, target)
-
-print(f'number 1: {ans[0]} number 2: {ans[1]}')
 
 
